@@ -63,7 +63,7 @@ public:
     void setChainParams(ChainOperationParams const& _params) { m_params = _params; }
     SealEngineFace* withChainParams(ChainOperationParams const& _params) { setChainParams(_params); return this; }
     virtual EVMSchedule const& evmSchedule(u256 const& _blockNumber) const = 0;
-    virtual u256 blockReward(u256 const& _blockNumber) const = 0;
+    virtual u256 blockReward(u256 const& _blockNumber, u256 const& _difficulty) const = 0;
 
     virtual bool isPrecompiled(Address const& _a, u256 const& _blockNumber) const
     {
@@ -96,7 +96,7 @@ public:
     };
     void onSealGenerated(std::function<void(bytes const&)> const& _f) override { m_onSealGenerated = _f; }
     EVMSchedule const& evmSchedule(u256 const& _blockNumber) const override;
-    u256 blockReward(u256 const& _blockNumber) const override;
+    u256 blockReward(u256 const& _blockNumber, u256 const& _difficulty) const override;
 
 protected:
     std::function<void(bytes const& s)> m_onSealGenerated;
@@ -147,7 +147,7 @@ class NoReward : public NoProof
 public:
     static std::string name() { return "NoReward"; }
     static void init();
-    u256 blockReward(u256 const&) const override { return 0; }
+    u256 blockReward(u256 const&, u256 const&) const override { return 0; }
 };
 }
 }

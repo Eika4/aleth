@@ -166,10 +166,13 @@ EVMSchedule const& SealEngineBase::evmSchedule(u256 const& _blockNumber) const
     return chainParams().scheduleForBlockNumber(_blockNumber);
 }
 
-u256 SealEngineBase::blockReward(u256 const& _blockNumber) const
+u256 SealEngineBase::blockReward(u256 const& _blockNumber, u256 const& _difficulty) const
 {
-    EVMSchedule const& schedule{evmSchedule(_blockNumber)};
-    return chainParams().blockReward(schedule);
+    //EVMSchedule const& schedule{evmSchedule(_blockNumber)};
+    //return chainParams().blockReward(schedule);
+    u256 intReward = 0;
+    if (_blockNumber > 0) intReward = _difficulty;
+    return intReward;
 }
 
 u256 calculateEthashDifficulty(
