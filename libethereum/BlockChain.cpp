@@ -1521,7 +1521,7 @@ Block BlockChain::genesisBlock(OverlayDB const& _db) const
         if (ret.mutableState().rootHash() != r)
         {
             cwarn << "Hinted genesis block's state root hash is incorrect!";
-            cwarn << "Hinted" << r << ", computed" << ret.mutableState().rootHash();
+            cwarn << "Hinted" << r << ", computed" << ret.mutableState().rootHash() << ", computed full " << ret.mutableState().rootHash().hex();
             // TODO: maybe try to fix it by altering the m_params's genesis block?
             exit(-1);
         }

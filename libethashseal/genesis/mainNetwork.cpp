@@ -4,7 +4,7 @@
 
 #include "../GenesisInfo.h"
 
-static dev::h256 const c_genesisStateRootMainNetwork("d7f8974fb5ac78d9ac099b9ad5018bedc2ce0a72dad1827a1709da30580f0544");
+static dev::h256 const c_genesisStateRootMainNetwork("56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421");
 static std::string const c_genesisInfoMainNetwork = std::string() +
 R"E(
 {
@@ -29,6 +29,7 @@ R"E(
         "minimumDifficulty": "0x2710",
         "difficultyBoundDivisor": "0x0800",
         "durationLimit": "0x0d",
+        "blockReward": "0x2710"
     },
     "genesis": {
         "nonce": "0x0000000000000042",
