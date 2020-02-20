@@ -245,6 +245,10 @@ vector<pair<Public, const char*>> defaultBootNodes()
     // TODO: Use full string enode representation, maybe via Node, NodeSpec or other type.
     // clang-format off
     return {
+        //Haket Testing:
+        {Public("096f687819c090cad218b6f71ba623adffef247ba2d6be1eddc1b001b2970b5dac088f6318d8fbdb11da6aac6feaab0949f918c6f43463fa1052bf6ecab2e267"), "46.101.143.171:30303"}
+
+/*
         // Mainnet:
         // --> Ethereum Foundation Go Bootnodes
         {Public("a979fb575495b8d6db44f750317d0f4622bf4c2aa3365d6af7c284339968eef29b69ad0dce72a4d8db5ebb4968de0e3bec910127f134779fbcb0cb6d3331163c"), "52.16.188.185:30303"}, // IE
@@ -274,6 +278,7 @@ vector<pair<Public, const char*>> defaultBootNodes()
         
         // --> Ethereum Foundation bootnode
         {Public("573b6607cd59f241e30e4c4943fd50e99e2b6f42f9bd5ca111659d309c06741247f4f1e93843ad3e8c8c18b6e2d94c161b7ef67479b3938780a97134b618b5ce"), "52.56.136.200:30303"},
+*/
     };
     // clang-format on
 }
