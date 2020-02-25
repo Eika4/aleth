@@ -26,14 +26,14 @@ R"E(
         "minGasLimit": "0x1388",
         "maxGasLimit": "7fffffffffffffff",
         "gasLimitBoundDivisor": "0x0400",
-        "minimumDifficulty": "0x2710",
+        "minimumDifficulty": "0x2540BE400",
         "difficultyBoundDivisor": "0x0800",
         "durationLimit": "0x0d",
-        "blockReward": "0x2710"
+        "blockReward": "0x2540BE400"
     },
     "genesis": {
         "nonce": "0x0000000000000042",
-        "difficulty": "0x400000000",
+        "difficulty": "0x000000000",
         "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "author": "0x0000000000000000000000000000000000000000",
         "timestamp": "0x00",
