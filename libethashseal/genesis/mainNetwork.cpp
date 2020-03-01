@@ -23,7 +23,7 @@ R"E(
         "chainID": "0xE1",
         "maximumExtraDataSize": "0x20",
         "tieBreakingGas": false,
-        "minGasLimit": "0x1388",
+        "minGasLimit": "0x493E0",
         "maxGasLimit": "7fffffffffffffff",
         "gasLimitBoundDivisor": "0x0400",
         "minimumDifficulty": "0x2540BE400",
@@ -38,7 +38,7 @@ R"E(
         "author": "0x0000000000000000000000000000000000000000",
         "timestamp": "0x00",
         "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-        "extraData": "0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa",
+        "extraData": "0x187571abc37e076310b3512139d39cecbb077b49e6fc591cc81c7c73c2674db9",
         "gasLimit": "0x1388"
     }
 }
