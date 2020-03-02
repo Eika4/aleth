@@ -23,13 +23,13 @@ R"E(
         "chainID": "0xE1",
         "maximumExtraDataSize": "0x20",
         "tieBreakingGas": false,
-        "minGasLimit": "0x493E0",
+        "minGasLimit": "0x1388",
         "maxGasLimit": "7fffffffffffffff",
         "gasLimitBoundDivisor": "0x0400",
         "minimumDifficulty": "0x2540BE400",
         "difficultyBoundDivisor": "0x0800",
-        "durationLimit": "0x0d",
-        "blockReward": "0x2540BE400"
+        "durationLimit": "0x1E",
+        "blockReward": "0x00"
     },
     "genesis": {
         "nonce": "0x0000000000000042",
@@ -39,7 +39,7 @@ R"E(
         "timestamp": "0x00",
         "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "extraData": "0x187571abc37e076310b3512139d39cecbb077b49e6fc591cc81c7c73c2674db9",
-        "gasLimit": "0x1388"
+        "gasLimit": "0x2fefba"
     }
 }
 )E";
